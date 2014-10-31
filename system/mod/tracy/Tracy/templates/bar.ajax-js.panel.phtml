@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Debug Bar: panel "dumps" template.
+ *
+ * This file is part of the Tracy (http://tracy.nette.org)
+ * Copyright (c) 2004 David Grudl (http://davidgrudl.com)
+ */
+
+namespace Tracy;
+
+use Tracy;
+
+?>
+<h1>AJAX</h1>
+<div class="tracy-inner tracy-DumpPanel">
+
+<?php if ( !empty($this->data) ) { ?>
+    <div class="tracy-toggle" style="background: #7798FF; border-bottom: 1px solid #e6dfbf; padding: 2px 5px; color: #fff; font-weight: bold;">
+        <?php print isset($_REQUEST['module']) ? $_REQUEST['module'] : ''; ?> > <?php print isset($_REQUEST['action']) ? $_REQUEST['action'] : ''; ?>
+        <?php foreach ($_GET as $key=>$value) {
+            print '['.$key.']='.$value;
+        } ?>
+    </div>
+    <div>
+    <?php foreach ($this->data as $item): ?>
+        <?php if ($item['title']):?>
+        <h2><?php echo htmlspecialchars($item['title']) ?></h2>
+        <?php endif ?>
+
+        <table>
+        <?php $i = 0 ?>
+        <tr class="<?php echo $i++ % 2 ? 'tracy-alt' : '' ?>">
+            <td><?php echo $item['dump'] ?></td>
+        </tr>
+        </table>
+    <?php endforeach ?>
+    </div>
+
+<?php } ?>
+</div>

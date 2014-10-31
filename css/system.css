@@ -1,0 +1,63 @@
+/*	==========================================================================
+		ELLY предустановленные стили
+	========================================================================== */
+/**
+*	Классы - константы.
+**/
+.left { float: left; }
+.right { float: right; }
+.overflow { overflow: hidden; }
+
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+.text-center { text-align: center !important; }
+.text-justify { text-align: justify !important; }
+
+	/* полностью скрытый элемент */
+.hidden { display: none !important; visibility: hidden; }
+
+	/* скрытый элемент, но занимающий место в разметке */
+.invisible { visibility: hidden; }
+
+	/* без полей, без отступов */
+.collapsed { margin: 0; padding: 0; }
+
+	/* различная ширина элемента */
+.w50 { width: 50px !important; }
+.w60 { width: 60px !important; }
+.w100 { width: 100px !important; }
+.w150 { width: 150px !important; }
+.w200 { width: 200px !important; }
+.w250 { width: 250px !important; }
+.w300 { width: 300px !important; }
+.w350 { width: 350px !important; }
+.w400 { width: 400px !important; }
+.w450 { width: 450px !important; }
+.w500 { width: 500px !important; }
+.w550 { width: 550px !important; }
+.w600 { width: 600px !important; }
+.w650 { width: 650px !important; }
+.w700 { width: 700px !important; }
+.w750 { width: 750px !important; }
+.w800 { width: 800px !important; }
+.w850 { width: 850px !important; }
+.w900 { width: 900px !important; }
+.w950 { width: 950px !important; }
+.w1000 { width: 1000px !important; }
+
+.margin-auto { margin: 0 auto; }
+
+	/* ajax-лоадер в центре экрана (либо может быть рядом с курсором) */
+#elly-ajax-loading { position:absolute; display:none; z-index:99999; background: rgba(255,255,255, .85); padding: 2px; border-radius: 3px; }
+
+	/* другой ajax-лоадер, можно применить картинку как бекграунд к любому элементу */
+.ellyAjaxLoader { background:url(../img/system/loading.gif) no-repeat center center; }
+
+
+	/* готовые бекграунды */
+.bg-black { background: #383838; background: -moz-linear-gradient(top, #383838 0%, #1d1c1c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #383838), color-stop(100%, #1d1c1c)); background: -webkit-linear-gradient(top, #383838 0%, #1d1c1c 100%); background: -o-linear-gradient(top, #383838 0%, #1d1c1c 100%); background: -ms-linear-gradient(top, #383838 0%, #1d1c1c 100%); background: linear-gradient(to bottom, #383838 0%, #1d1c1c 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#1d1c1c', GradientType=0 ); background-repeat: repeat-x; }
+.bg-white { background-color: #fff; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
+
+.bg-jeans-black { background: url(../img/system/bg-jeans-black.jpg); }
+.bg-jeans-blue { background: url(../img/system/bg-jeans-blue.jpg); }
+.bg-jeans-gray { background: url(../img/system/bg-jeans-gray.jpg); }

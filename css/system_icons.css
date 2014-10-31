@@ -1,0 +1,92 @@
+	/***** 16x16 *****/
+.core_icons_16 {
+	display:inline-block;
+	width:20px;
+	height:20px;
+	*margin-right:.3em;
+	line-height:20px;
+	margin-top:-3px;
+	vertical-align:middle;
+	background:url(../img/sprite/core_icons_16.png) no-repeat;
+}
+
+.core_icons_16.check             {background-position:0 0;}
+
+.core_icons_16.plus_3d           {background-position:-20px 0;}
+.core_icons_16.plus              {background-position:-40px 0;}
+.core_icons_16.cross             {background-position:-60px 0;}
+.core_icons_16.cross_gray        {background-position:-80px 0;}
+
+.core_icons_16.pencil            {background-position:-100px 0;}
+
+.core_icons_16.disc              {background-position:-120px 0;}
+
+.core_icons_16.star              {background-position:-140px 0;}
+
+.core_icons_16.status_green      {background-position:-160px 0;}
+.core_icons_16.status_red        {background-position:-180px 0;}
+.core_icons_16.status_yellow     {background-position:-200px 0;}
+.core_icons_16.status_blue       {background-position:-220px 0;}
+.core_icons_16.status_gray       {background-position:-240px 0;}
+
+.core_icons_16.arrow_green_up    {background-position:-260px 0;}
+.core_icons_16.arrow_green_down  {background-position:-280px 0;}
+.core_icons_16.arrow_green_left  {background-position:-300px 0;}
+.core_icons_16.arrow_green_right {background-position:-320px 0;}
+
+.core_icons_16.arrow_white_down  {background-position:-340px 0;}
+.core_icons_16.arrow_white_right {background-position:-360px 0;}
+
+.core_icons_16.message_yellow    {background-position:-380px 0;}
+.core_icons_16.message_white     {background-position:-400px 0;}
+.core_icons_16.message_open      {background-position:-420px 0;}
+
+.core_icons_16.user_green        {background-position:0 -20px;}
+.core_icons_16.user_blue         {background-position:-20px -20px;}
+
+.core_icons_16.placeholder       {background-position:-40px -20px;}
+.core_icons_16.placeholder       {background-position:-60px -20px;}
+
+.core_icons_16.warning           {background-position:-80px -20px;}
+.core_icons_16.table1            {background-position:-100px -20px;}
+.core_icons_16.table2            {background-position:-120px -20px;}
+
+.core_icons_16.plus_white        {background-position:-140px -20px;}
+.core_icons_16.minus_white       {background-position:-160px -20px;}
+.core_icons_16.filter            {background-position:-180px -20px;}
+.core_icons_16.gear              {background-position:-200px -20px;}
+.core_icons_16.link              {background-position:-220px -20px;}
+.core_icons_16.attachment        {background-position:-240px -20px;}
+.core_icons_16.clock_blue        {background-position:-260px -20px;}
+.core_icons_16.clock_green       {background-position:-280px -20px;}
+
+.core_icons_16.file_download     {background-position:0 -40px;}
+.core_icons_16.export_excel      {background-position:-20px -40px;}
+
+.core_icons_16.form_edit         {background-position:-40px -40px;}
+
+
+   /***** 32x32 COLOR *****/
+
+.core_icons_32 {display:inline-block;width:40px;height:40px;*margin-right:.3em;line-height:40px;vertical-align:middle;background:url(../img/sprite/core_icons_32.png) no-repeat;}
+
+.core_icons_32.plus            {background-position:-40px 0;}
+.core_icons_32.cross           {background-position:-80px 0;}
+.core_icons_32.pencil          {background-position:-120px 0;}
+
+
+   /***** 12x12 COLOR *****/
+
+.core_icons_12 {display:inline-block;width:15px;height:15px;*margin-right:.3em;line-height:15px;vertical-align:middle;background:url(../img/sprite/core_icons_12.png) no-repeat;}
+
+.core_icons_12.plus               {background-position:-15px 0;}
+/*
+.core_icons_12.cross           {background-position:-30px 0;}
+.core_icons_12.pencil          {background-position:-45px 0;}
+.core_icons_12.pencil          {background-position:-60px 0;}
+.core_icons_12.pencil          {background-position:-75px 0;}
+*/
+.core_icons_12.sort_up_active     {background-position:-90px 0;}
+.core_icons_12.sort_down_active   {background-position:-105px 0;}
+.core_icons_12.sort_up            {background-position:-120px 0;}
+.core_icons_12.sort_down          {background-position:-135px 0;}
