@@ -1,9 +1,9 @@
 [DATABASE]
 
 dbHOST = localhost
-dbNAME = 
+dbNAME = advertising
 dbUSER = root
-dbPASS = 
+dbPASS = 123
 
 dbTYPE = mysql
 

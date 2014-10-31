@@ -7,5 +7,4 @@ class systemController extends controller {
 		config::set('DEBUG', 1);
 		print_arr('Кеш очищен!', 1);
 	}
-
 }

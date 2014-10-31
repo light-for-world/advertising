@@ -19,7 +19,8 @@
 				'css/vendor/chosen.min.css',
 				'css/system.css',
 				'css/system_icons.css',
-				'css/main.css',
+                'css/mobile.css',
+                'css/vendor/accordion.css',
 			)
 		);
 
@@ -32,11 +33,11 @@
 				'js/vendor/handlebars.js',
 				'js/vendor/moment.min.js',
 				'js/vendor/bootstrap.js',
+				'js/vendor/accordion.js',
 				'js/elly-core.js',
 				'js/app.js',
 			)
 		);
-
 		echo $this->attachStyle();
 		echo $this->attachScript();
 	?>

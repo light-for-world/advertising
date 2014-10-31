@@ -11,8 +11,22 @@ class router {
 			// если массив $map пустой, то имя контроллера и имя экшена будет index
 		$controllerName = ( !empty($map[0]) ) ? $map[0] : 'index';
 		$actionName = ( !empty($map[1]) ) ? $map[1] : 'index';
+        if ( isset($_REQUEST['m']) && $_REQUEST['m']==1 ) {
+            $_SESSION['m'] = 1;
+            request::setcookie('m', 1);
+        }
 
-		$template_folder = 'templates';
+        if ( isset($_REQUEST['m']) && $_REQUEST['m']==0 ) {
+            $_SESSION['m'] = 0;
+            request::setcookie('m', 0);
+        }
+
+        if ( (isset($_SESSION['m']) && $_SESSION['m']==1) || (isset($_COOKIE['m']) && $_COOKIE['m']==1) ) {
+            $template_folder = 'templates/mobile';
+        } else {
+            $template_folder = 'templates';
+        }
+
 		$widget_folder = '';
 
 			// check if module is widget, then render widget (get widget name from "action" variable, set action=index and set template folder to widget template)

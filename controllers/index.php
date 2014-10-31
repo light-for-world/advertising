@@ -1,7 +1,7 @@
 <?php
-class indexController extends controller {
+    class indexController extends controller{
+        public function index(){
 
-	public function index() {
-	}
-
-}
+        }
+    }
+?>

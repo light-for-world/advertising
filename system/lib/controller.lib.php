@@ -15,8 +15,22 @@ class controller {
 		$this->user = $this->view->user = user::getCurrentUser();
 		$this->controllerName = $controllerName;
 		$this->actionName = $actionName;
+        if ( isset($_REQUEST['m']) && $_REQUEST['m']==1 ) {
+            $_SESSION['m'] = 1;
+            request::setcookie('m', 1);
+        }
 
-			// для того что бы закрыть весь сайт для незалогиненого пользователя
+        if ( isset($_REQUEST['m']) && $_REQUEST['m']==0 ) {
+            $_SESSION['m'] = 0;
+            request::setcookie('m', 0);
+        }
+
+        if ( (isset($_SESSION['m']) && $_SESSION['m']==1) || (isset($_COOKIE['m']) && $_COOKIE['m']==1) ) {
+            $this->setTemplateName('main-mobile');
+        } else {
+            $this->setTemplateName('main');
+        }
+			// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		//if ( !$this->user->getId() && $this->getControllerName()!=='user' && $this->getActionName()!=='login' ) {
 		//	$this->redirect('user', 'login');
 		//}

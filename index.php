@@ -9,6 +9,10 @@ require_once SITE_ROOT.'/system/lib/elly_functions.php';
 require_once SITE_ROOT.'/system/lib/autoloader.lib.php';
 require_once SITE_ROOT.'/system/mod/tracy/tracy.php';
 
+if ( isset($_GET['m']) ) {
+    $_GET = array('index@index'=>'', 'm'=>$_GET['m']);
+}
+
 	// initiate core functions
 autoloader::init();
 config::init();
